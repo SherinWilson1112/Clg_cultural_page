@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: black;
+    background: url("black1.png") no-repeat center fixed;
+}
+.header
+{
+    min-height: 80vh;
+    width: 100%;
+    background: url("contact2.png") no-repeat center fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.crossroad
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 0;
+    font-size: 30px;
+}
+.date
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 0px;
+    font-size: 20px;
+}
+.eve
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 140px;
+    font-size: 56px;
+}
+.text{
+    color: rgb(238, 111, 8);
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.info
+{
+    text-align: center;
+    color: rgb(238, 111, 8);;
+}
+.stud-coordinators-1
+{
+    font-size: 35px;
+}
+.stud-coordinators
+{
+    font-size: 30px;
+}
+.stud-name
+{
+    font-size: 20px;
+}
+
+
+
+/*======= Button 3 =======*/
+
+
+  .buttons-3{
+    margin: 150px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+  }
+  .btn3{
+    padding: 15px 50px;
+    margin:2px 40px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  .btn3{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  .btn3::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background:  rgb(52, 79, 233);
+    box-shadow: inset 0px 0px 0px  rgb(52, 79, 233);
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  
+  .btn3:hover::before {
+    width:100%;
+  }
+  
+  .btn3::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: rgb(238, 111, 8);
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .btn3:hover::after {
+    width:100%;
+  }
+  .btn3:hover{
+    border-left:1px solid  rgb(52, 79, 233);
+    border-right:1px solid rgb(238, 111, 8);
+  }
+  footer
+{
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 100px;
+    color: #fff;
+    background-color: black;
+}
+.footer > *
+{
+    flex: 1 100%;
+}

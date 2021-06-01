@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color: black;
+    background: url("black3.jpg") no-repeat center fixed;
+}
+.header
+{
+    min-height: 80vh;
+    width: 100%;
+    background: url("eventnew.png") no-repeat center fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.crossroad
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 0;
+    font-size: 30px;
+}
+.date
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 0px;
+    font-size: 20px;
+}
+.eve
+{
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+    font-size: 56px;
+}
+/*======= Button  =======*/
+
+
+.buttons-1{
+    margin: 150px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+.btn1{
+    padding: 15px 310px;
+    margin:10px 4px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  .buttons-2 {
+    margin: 40px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+.btn2{
+    padding: 15px 310px;
+    margin:2px 4px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  
+
+.btn1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .btn1:hover::before{
+    opacity: 1;
+    background-color: #e7ad0c;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+  .btn2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleX(.3);
+    transform: scaleX(.3);
+    opacity: 0;
+    transition: all .3s
+  }
+  .btn2:hover::before{
+    opacity: 1;
+    background-color: #e7ad0c;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+  .buttons-3{
+    margin: 150px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+  }
+  .btn3{
+    padding: 15px 50px;
+    margin:2px 40px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    
+  }
+  .btn3{
+    border:1px solid transparent; 
+     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  }
+  
+  .btn3::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background:  rgb(52, 79, 233);
+    box-shadow: inset 0px 0px 0px  rgb(52, 79, 233);
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  
+  .btn3:hover::before {
+    width:100%;
+  }
+  
+  .btn3::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #e7ad0c;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .btn3:hover::after {
+    width:100%;
+  }
+  .btn3:hover{
+    border-left:1px solid  rgb(52, 79, 233);
+    border-right:1px solid #e7ad0c;
+  }
+  footer
+{
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 200px;
+    color: #fff;
+    background-color: black;
+}
+.footer > *
+{
+    flex: 1 100%;
+}
